@@ -2,7 +2,7 @@
 
 ## Overview
 
-<Brain-Burst> is a web application that allows users to take quizzes on a particular topic and share their certificates on social media. The application is built using Next.js, Node.js, Express.js, Mongoose, TypeScript, Tailwind CSS, and Ant Design.
+Brain-Burst is a web application that allows users to take quizzes on a particular topic and share their certificates on social media. The application is built using Next.js, Node.js, Express.js, Mongoose, TypeScript, Tailwind CSS, and Ant Design.
 
 ## Features
 
@@ -37,10 +37,10 @@ When you contribute, you will create a branch in your own name. Then, you will p
 ## please follow these steps:
 
 1. Clone the repository:
-   
+
 ```bash
    git clone https://github.com/masumrana0/Brain-Burst-Backend.git
-   ```
+```
 
 2. Create a branch with your own name:
 
