@@ -4,7 +4,11 @@
 
 <Brain-Burst> is a web application that allows users to take quizzes on a particular topic and share their certificates on social media. The application is built using Next.js, Node.js, Express.js, Mongoose, TypeScript, Tailwind CSS, and Ant Design.
 
+<<<<<<< HEAD
 ## Features
+=======
+When you contribute, you will create a branch in your own name. Then, you will push your contributed code to that branch.Please Remember, After pushing the code, you must submit a pull request to the development branch..
+>>>>>>> d61cae3 (modifed readme file)
 
 ### Quiz Taking
 
