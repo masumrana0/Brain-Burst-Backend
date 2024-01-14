@@ -37,8 +37,8 @@ When you contribute, you will create a branch in your own name. Then, you will p
 ## please follow these steps:
 
 1. Clone the repository:
-
-   ```bash
+   
+```bash
    git clone https://github.com/masumrana0/Brain-Burst-Backend.git
    ```
 
