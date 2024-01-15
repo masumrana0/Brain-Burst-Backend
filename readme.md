@@ -42,13 +42,6 @@ When you contribute, you will create a branch in your own name. Then, you will p
    git clone https://github.com/masumrana0/Brain-Burst-Backend.git
 ```
 
-# NOTE: after cloning repository :
-
-```
-npm istall and npm start
-
-```
-
 2. Create a branch with your own name:
 
 ```bash
