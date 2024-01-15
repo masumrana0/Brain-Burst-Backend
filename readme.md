@@ -54,6 +54,10 @@ When you contribute, you will create a branch in your own name. Then, you will p
 git push origin brach-name
 ```
 
+### npm run dev insted of npm start
+
+### create your own .env file
+
 ### Data Pattern
 
 - **Register:**
