@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Masum-Rana\\Documents\\Brain_Burst\\Brain-Burst-Backend\\logs\\winston\\succeses\\.5cfe971948790042494f9e8fbfaa0457f617ce72-audit.json",
+    "files": [
+        {
+            "date": 1705403498353,
+            "name": "C:\\Users\\Masum-Rana\\Documents\\Brain_Burst\\Brain-Burst-Backend\\logs\\winston\\succeses\\success-2024-01-16-17.log",
+            "hash": "46e381e2b5ad62161593ab641226440bcc880f96f9bfaaa3f7ab53745c51354a"
+        }
+    ],
+    "hashType": "sha256"
+}
