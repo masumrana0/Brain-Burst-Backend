@@ -1,5 +1,6 @@
 # Brain-Burst-Backend
 
+<<<<<<< HEAD
 ## Overview
 
 Brain-Burst is a web application that allows users to take quizzes on a particular topic and share their certificates on social media. The application is built using Next.js, Node.js, Express.js, Mongoose, TypeScript, Tailwind CSS, and Ant Design.
@@ -30,12 +31,15 @@ Brain-Burst is a web application that allows users to take quizzes on a particul
 - **Express.js**: A web application framework for Node.js.
 - **Mongoose**: An ODM (Object Document Mapper) for MongoDB and Node.js.
 
+=======
+>>>>>>> 73bc17b (add readme file about how to contribute in this project)
 ## How to Contribute.
 
 When you contribute, you will create a branch in your own name. Then, you will push your contributed code to that branch.Please Remember, After pushing the code, you must submit a pull request to the development branch.
 
 ## please follow these steps:
 
+<<<<<<< HEAD
 1. Clone the repository:
 
 ```bash
@@ -52,6 +56,18 @@ When you contribute, you will create a branch in your own name. Then, you will p
 
 ```bash
 git push origin brach-name
+=======
+1. Create a branch with your own name:
+
+   ```bash
+   git checkout -b your-branch-name
+   ```
+
+2. push code:
+
+```bash
+git push origin masum
+>>>>>>> 73bc17b (add readme file about how to contribute in this project)
 ```
 
 ### Data Pattern

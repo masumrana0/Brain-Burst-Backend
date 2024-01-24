@@ -1,10 +1,12 @@
+/**
+ * Title: 'Zod schema define by Masum Rana'
+ * Description: ''
+ * Author: 'Masum Rana'
+ * Date: 24-01-2024
+ *
+ */
+
 import z from 'zod';
-import {
-  asianNationalityEnum,
-  educationEnum,
-  genderEnum,
-  skillsEnum,
-} from './user.constant';
 
 const IName = z.object({
   firstName: z.string({ required_error: 'First name is required' }),
@@ -12,20 +14,15 @@ const IName = z.object({
 });
 
 const UserZodScehma = z.object({
-  userName: z.string(),
-  name: IName,
-  email: z.string().email({ message: 'Invalid email format' }),
-  gender: z
-    .string()
-    .refine(value => value === '' || genderEnum.includes(value), {
-      message: 'Invalid gender value',
-    }),
-
-  dateOfBirth: z.date(),
-  nationality: z.enum(['', ...asianNationalityEnum]).optional(),
-  skills: z.enum(['', ...skillsEnum]).optional(),
-  education: z.enum(['', ...educationEnum]).optional(),
-  profilePicture: z.string().optional(),
+  body: z.object({
+    userName: z.string().optional(),
+    name: IName,
+    email: z
+      .string({ required_error: 'email is required' })
+      .email({ message: 'invalid email' }),
+    password: z.string(),
+    nationality: z.string(),
+  }),
 });
 
 export const userValidationZodSchema = {

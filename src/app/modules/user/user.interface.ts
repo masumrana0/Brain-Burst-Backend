@@ -1,41 +1,6 @@
-type ISkills =
-  | 'Html'
-  | 'CSS'
-  | 'Tailwind Css'
-  | 'JavaScript'
-  | 'TypeScript'
-  | 'React.js'
-  | 'Next.js'
-  | 'VUE.js'
-  | 'Angular'
-  | 'React Native'
-  | 'Redux'
-  | 'GraphQL'
-  | 'GatsBy.js'
-  | 'Node.js'
-  | 'Express.js'
-  | 'Java'
-  | 'Python'
-  | 'Django'
-  | 'PHP'
-  | 'Laravel'
-  | '.Net'
-  | 'Mongodb'
-  | 'MYSQL'
-  | 'PostgreSQL'
-  | 'Oracle'
-  | 'WordPress'
-  | 'Firebase';
+import { Model, Document } from 'mongoose';
 
-type IEducation =
-  | 'JSC/JDC/8 PASS'
-  | 'SSC/Secondary'
-  | 'HSC / Higher Secondary'
-  | 'Diploma'
-  | 'Bachelor / Honors'
-  | 'Masters'
-  | 'PHD (Doctor of Philosophy)';
-
+/* eslint-disable no-unused-vars */
 type IAsianNationality =
   | 'Afghan'
   | 'Armenian'
@@ -87,22 +52,28 @@ type IAsianNationality =
   | 'Vietnamese'
   | 'Yemeni';
 
-type IGender = 'male' | 'Female';
-
 export type IName = {
   firstName: string;
   lastName?: string;
 };
 
 export type IUser = {
+  _id?: string;
   userName?: string;
+  role: 'admin' | 'normal_user';
   name: IName;
   email: string;
-  gender: IGender;
-  dateOfBirth: Date;
+  password: string;
   nationality: IAsianNationality;
-  skills?: ISkills[];
-  education?: IEducation[];
-  socialMediaLinks?: [];
-  profilePicture?: string;
+  isChangedPassword?: boolean;
+  passwordChangedAt?: Date;
+  isEmailVerified?: boolean;
+};
+
+export type UserModel = Model<IUser & Document> & {
+  isUserExist(email: string): Promise<IUser | null>;
+  isPasswordMatched(
+    givenPassword: string,
+    savedPassword: string,
+  ): Promise<boolean>;
 };
